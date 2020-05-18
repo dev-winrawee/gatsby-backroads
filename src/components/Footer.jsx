@@ -1,10 +1,37 @@
 import React from 'react'
+import {Link} from 'gatsby';
+import styles from "../css/footer.module.css";
+import links from "../constants/links";
+import socialIcons from "../constants/social-icons";
+
+
 
 const Footer = () => {
   return (
-    <div>
-      <h1>I am footer</h1>
-    </div>
+    <footer className={styles.footer}>
+      <div className={styles.links}>
+        {links.map((item,index) => {
+          return (
+            <Link key={index} to={item.path}>
+              {item.text}
+            </Link>
+          )
+        })}
+      </div>
+      <div className={styles.icons}>
+        {socialIcons.map((item,index) => {
+          return(
+          <a key={index} href={item.url} target="_blank" rel="noopener noreferrer">
+            {item.icons}
+          </a>
+          )
+        })}
+      </div>
+      <div className={styles.copyright}>
+        <p>copyright &copy; goldseabeach company {new Date().getFullYear()} all right reserved</p>
+      </div>
+
+    </footer>
   )
 }
 

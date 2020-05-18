@@ -1,4 +1,8 @@
-
+/* .logo-main {
+  width: 80%;
+  height: 100%;
+  object-fit: scale-down;
+} */
 .nav-header {
   display: flex;
   justify-content: space-between;
@@ -21,8 +25,10 @@
 .nav-links {
   list-style-type: none;
   transition: var(--mainTransition);
-  /* height: 0;
-  overflow: hidden; */
+
+  /* toggle menu key hidden show usestate to be false from start */
+  height: 0;
+  overflow: hidden;
 }
 .show-nav {
   height: 216px;

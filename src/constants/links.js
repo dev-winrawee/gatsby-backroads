@@ -5,7 +5,7 @@ export default [
     },
     {
         path: "/rooms",
-        text: "room"
+        text: "rooms"
     },
     {
         path: "/blog",
