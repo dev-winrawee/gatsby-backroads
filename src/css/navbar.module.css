@@ -3,6 +3,9 @@
   height: 100%;
   object-fit: scale-down;
 } */
+.logo-main a:hover {
+  
+}
 .nav-header {
   display: flex;
   justify-content: space-between;
