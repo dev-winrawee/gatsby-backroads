@@ -2,7 +2,7 @@ import React from 'react'
 import {graphql} from "gatsby";
 import Layout from "../components/Layout";
 import StyledHero from "../components/StyledHero";
-import styles from "../css/Template.module.css";
+import styles from "../css/template.module.css";
 import Image from "gatsby-image";
 import {FaMoneyBillWave, FaMap} from "react-icons/fa";
 import Day from "../components/singletour/Day";
