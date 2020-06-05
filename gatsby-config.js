@@ -10,7 +10,11 @@ module.exports = {
   siteMetadata: {
     title: "Goldseabeach",
     description: "Explore Phuket as a local adventure with affordable hotel.forget your hardwork routine and say yes to explore the exciting city.",
-    author: "@winrewee",
+    author: "@winrawee",
+    twitterUsername: "@winrawee",
+    image: "/goldseabeach.jpg",
+    siteUrl: "https://goldseabeach.netlify.app",
+
   },
   plugins: [
     {
@@ -29,6 +33,8 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`, `gatsby-plugin-styled-components`,
-    `gatsby-transformer-sharp`, `gatsby-plugin-sharp`, `gatsby-plugin-transition-link`,
+    `gatsby-transformer-sharp`, `gatsby-plugin-sharp`, 
+    `gatsby-plugin-transition-link`, `gatsby-plugin-playground`,
+    `gatsby-plugin-react-helmet`,
   ],
 }

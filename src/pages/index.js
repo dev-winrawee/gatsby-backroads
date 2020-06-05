@@ -7,10 +7,13 @@ import About from "../components/home/About";
 import Services from "../components/home/services";
 import StyledHero from "../components/StyledHero";
 import {graphql} from "gatsby";
+import SEO from "../components/SEO";
+import FeaturedTours from "../components/home/FeaturedTours";
 
 export default ({data}) => (
 
     <Layout>
+      <SEO title="home" description="stay in Phuket at affordable price" />
         <StyledHero home= "true" img={data.goldseabeach.childImageSharp.fluid}>
             <Banner 
                 title = "expore phuket"
@@ -25,6 +28,7 @@ export default ({data}) => (
     
         <About />
         <Services />
+        <FeaturedTours />
     </Layout>
 
 
