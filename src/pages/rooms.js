@@ -3,10 +3,13 @@ import Layout from "../components/Layout";
 import StyledHero from "../components/StyledHero";
 import {graphql} from "gatsby";
 
+import SEO from "../components/SEO";
+
 class rooms extends Component {
     render() {
         return (
             <Layout>
+              <SEO title="Room" />
                 <StyledHero img = {this.props.data.goldseabeach.childImageSharp.fluid}/>
             </Layout>
         );

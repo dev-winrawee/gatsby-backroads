@@ -5,9 +5,12 @@ import Tours from "../components/tours/Tours";
 import StyledHero from "../components/StyledHero";
 import {graphql} from "gatsby";
 
+import SEO from "../components/SEO";
+
 const Tour = ({data}) => {
   return (
     <Layout>
+      <SEO title="Tour" />
       <StyledHero img={data.tourBcg.childImageSharp.fluid} />
       <Tours />
     </Layout>

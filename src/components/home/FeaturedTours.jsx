@@ -13,7 +13,7 @@ query {
         name
         price
         slug
-        country
+        place
         contentful_id
         days
         images {

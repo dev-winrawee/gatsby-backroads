@@ -9,9 +9,12 @@ import styles from "../css/error.module.css";
 
 import Banner from "../components/banner";
 
+import SEO from "../components/SEO";
+
 const error = () => {
   return (
     <Layout>
+      <SEO title="error" />
       <header className={styles.error}>
         <Banner 
         title= "oops it's a dead end"

@@ -26,6 +26,14 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://goldseabeach.netlify.app',
+        sitemap: 'https://goldseabeach.netlify.app/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -35,6 +43,6 @@ module.exports = {
     `gatsby-plugin-sass`, `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`, `gatsby-plugin-sharp`, 
     `gatsby-plugin-transition-link`, `gatsby-plugin-playground`,
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-helmet`, `gatsby-plugin-sitemap`,
   ],
 }
